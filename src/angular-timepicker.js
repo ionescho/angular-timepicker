@@ -98,9 +98,9 @@
                         function setCurrentValue(value) {
                             if (!angular.isDate(value)) {
                                 value = $dateParser(scope.ngModel, scope.timepicker.timeFormat);
-                                if (isNaN(value)) {
-                                    $log.warn('Failed to parse model.');
-                                }
+                                // if (isNaN(value)) {
+                                //     $log.warn('Failed to parse model.');
+                                // }
                             }
                             
                             current = value;
